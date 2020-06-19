@@ -1,0 +1,80 @@
+[[plugins]]                                    
+repo = 'Shougo/dein.vim'                                          
+
+# ------------------------------------                                    
+# colorscheme lucius setting                                    
+# ------------------------------------
+[[plugins]]
+repo = 'jonathanfilip/vim-lucius'                                    
+hook_add = '''                                              
+    colorscheme lucius                                      
+    set background=dark                                     
+    syntax enable
+'''
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+let g:airline_powerline_fonts = 1
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+    nnoremap <silent><C-e> :NERDTreeToggle<CR>
+    let g:NERDTreeWinSize = 25
+    let g:neoterm_default_mod='belowright'
+    let g:neoterm_size=10
+    let g:neoterm_autoscroll=1
+    '''
+[[plugins]]
+repo = 'kana/vim-fakeclip.git'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+if = '''executable('node') && executable('yarn')'''
+build = 'yarn install --frozen-lockfile'
+merged = '0'
+hook_add = '''
+source /usr/share/nvim/coc-conf.vim
+'''
+
+[[plugins]]
+repo = 'kassio/neoterm'
+hook_add = '''
+tnoremap <silent> <ESC> <C-\><C-n>
+nnoremap <c-t><c-t> :Ttoggle<CR>
+tnoremap <c-t><c-t> <ESC>:Ttoggle<CR>
+
+nnoremap @p :T python %:t<CR>
+nnoremap @h :T stack runghc %:t<CR>
+nnoremap @l :T ptex2pdf -l -ot -kanji=utf8 %:t<CR> 
+'''
+
+[[plugin]]
+repo = 'neoclide/coc-jedi'
+build = 'yarn install'
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+hook_add = '''
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+'''
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
