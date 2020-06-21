@@ -42,7 +42,7 @@ if = '''executable('node') && executable('yarn')'''
 build = 'yarn install --frozen-lockfile'
 merged = '0'
 hook_add = '''
-source /usr/share/nvim/coc-conf.vim
+source ~/.config/nvim/coc-conf.vim
 '''
 
 [[plugins]]
