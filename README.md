@@ -1,6 +1,6 @@
 # ゐてるまのためのneovimコンフィグファイル
 ## 使い方
-1. ~/.config直下にgit cloneする。
+1. git cloneしたものを~/.config/nvimにコピーする。
 
 2. deinをインストールする。
 ```
@@ -11,12 +11,12 @@ chmod +x installer.sh
 ./installer.sh ~/.config/nvim/dein
 ```
 
-3. 以下のいずれかでpython providerを導入する
+3. 一度nvimを実行する。
+
+(4). 以下のいずれかでpython providerを導入する(うまく行かない場合）
 ```
 pip install pynvim
 ```
 ```
 pip3 install pynvim
 ```
-
-4. 一度nvimを実行する。
