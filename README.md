@@ -11,4 +11,12 @@ chmod +x installer.sh
 ./installer.sh ~/.config/nvim/dein
 ```
 
-3. 一度nvimを実行する。
+3. 以下のいずれかでpython providerを導入する
+```
+pip install pynvim
+```
+```
+pip3 install pynvim
+```
+
+4. 一度nvimを実行する。
