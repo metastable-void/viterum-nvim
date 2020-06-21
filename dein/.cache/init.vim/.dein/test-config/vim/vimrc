@@ -1,4 +1,0 @@
-runtime! defaults.vim
-set runtimepath=$VMTEST_PATH,$PLUGIN_PATH
-set shortmess=actToOFI
-set cmdheight=2

@@ -1,3 +1,0 @@
-{'repo': v:val.repo, 'rev': get(v:val, 'rev', '')}
-0
-[{'rev': '', 'repo': 'Shougo/dein.vim'}, {'rev': '', 'repo': 'SirVer/ultisnips'}, {'rev': '', 'repo': 'honza/vim-snippets'}, {'rev': '', 'repo': 'jonathanfilip/vim-lucius'}, {'rev': '', 'repo': 'junegunn/fzf'}, {'rev': '', 'repo': 'junegunn/fzf.vim'}, {'rev': '', 'repo': 'kana/vim-fakeclip.git'}, {'rev': '', 'repo': 'kassio/neoterm'}, {'rev': '', 'repo': 'neoclide/coc.nvim'}, {'rev': '', 'repo': 'scrooloose/nerdtree'}, {'rev': '', 'repo': 'sheerun/vim-polyglot'}, {'rev': '', 'repo': 'vim-airline/vim-airline'}, {'rev': '', 'repo': 'vim-airline/vim-airline-themes'}]
