@@ -1,6 +1,6 @@
 # ゐてるまのためのneovimコンフィグファイル
 ## 使い方
-1. git cloneしたものを~/.config/nvimにコピーする。
+1. ~/.config直下にgit cloneする。
 
 2. deinをインストールする。
 ```
