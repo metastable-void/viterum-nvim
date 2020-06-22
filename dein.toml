@@ -72,9 +72,3 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 [[plugins]]
 repo = 'honza/vim-snippets'
 
-[[plugins]]
-repo = 'junegunn/fzf'
-build = './install --all'
-
-[[plugins]]
-repo = 'junegunn/fzf.vim'
