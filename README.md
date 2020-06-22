@@ -1,5 +1,9 @@
 # ゐてるまのためのneovimコンフィグファイル
+
+TeX, PythonのLanguage-Serverが導入済み
+
 ## 使い方
+
 (1). ~/.config直下にgit cloneする。
 
 (2). deinをインストールする。
@@ -20,3 +24,9 @@ pip install pynvim
 ```
 pip3 install pynvim
 ```
+
+(5). haskell-ide-engineを導入してない場合は
+```
+:CocConfig
+```
+の中身を削除。
