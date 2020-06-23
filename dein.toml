@@ -8,7 +8,8 @@ repo = 'Shougo/dein.vim'
 repo = 'jonathanfilip/vim-lucius'                                    
 hook_add = '''                                              
     colorscheme lucius                                      
-    set background=dark                                     
+    set background=light
+    let s:high_contrast=1
     syntax enable
 '''
 
@@ -72,3 +73,11 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 [[plugins]]
 repo = 'honza/vim-snippets'
 
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+let g:netrw_browsex_viewer = 'open'
+'''
+
+[[plugins]]
+repo = 'tpope/vim-rhubarb'
