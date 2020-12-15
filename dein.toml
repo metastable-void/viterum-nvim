@@ -34,6 +34,7 @@ hook_add = '''
     let g:neoterm_size=10
     let g:neoterm_autoscroll=1
     '''
+
 [[plugins]]
 repo = 'kana/vim-fakeclip.git'
 
@@ -49,10 +50,6 @@ source ~/.config/nvim/coc-conf.vim
 [[plugins]]
 repo = 'kassio/neoterm'
 hook_add = '''
-tnoremap <silent> <ESC> <C-\><C-n>
-nnoremap <c-t><c-t> :Ttoggle<CR>
-tnoremap <c-t><c-t> <ESC>:Ttoggle<CR>
-
 nnoremap @p :T python %:t<CR>
 nnoremap @h :T stack runghc %:t<CR>
 nnoremap @l :T ptex2pdf -l -ot -kanji=utf8 %:t<CR> 
@@ -81,3 +78,6 @@ let g:netrw_browsex_viewer = 'open'
 
 [[plugins]]
 repo = 'tpope/vim-rhubarb'
+
+[[plugins]]
+repo = 'junegunn/fzf'

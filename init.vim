@@ -2,9 +2,8 @@
 "  key bind
 " ------------------------------------------------------------
 " Normal Mode
-cnoremap init :<C-u>edit $MYVIMRC<CR>                           " init.vim呼び出し
-noremap <Space>s :source $MYVIMRC<CR>                           " init.vim読み込み
-noremap <Space>w :<C-u>w<CR>                                    " ファイル保存
+noremap <C-t> :terminal<CR>
+tnoremap <Esc> <C-\><C-n><CR>
 
 " Insert Mode
 inoremap <silent> jj <ESC>:<C-u>w<CR>:" InsertMode抜けて保存
@@ -18,11 +17,14 @@ inoremap <C-j> <Down>
 " encode setting                                                                                                                                 
 set encoding=utf-8
 " edita setting
+set termguicolors
 set number                                                      " 行番号表示
 set splitbelow                                                  " 水平分割時に下に表示
 set splitright                                                  " 縦分割時を右に表示
 set noequalalways                                               " 分割時に自動調整を無効化
 set wildmenu                                                    " コマンドモードの補完
+autocmd TermOpen * setlocal norelativenumber
+autocmd TermOpen * setlocal nonumber
 " cursorl setting
 set ruler                                                       " カーソルの位置表示
 set cursorline                                                  " カーソルハイライト
