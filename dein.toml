@@ -59,25 +59,34 @@ nnoremap @l :T ptex2pdf -l -ot -kanji=utf8 %:t<CR>
 repo = 'neoclide/coc-jedi'
 build = 'yarn install'
 
-[[plugins]]
-repo = 'SirVer/ultisnips'
-hook_add = '''
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-'''
+# [[plugins]]
+# repo = 'SirVer/ultisnips'
+# hook_add = '''
+# let g:UltiSnipsExpandTrigger="<c-j>"
+# let g:UltiSnipsJumpForwardTrigger="<c-b>"
+# let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+# '''
 
 [[plugins]]
 repo = 'honza/vim-snippets'
 
-[[plugins]]
-repo = 'tpope/vim-fugitive'
-hook_add = '''
-let g:netrw_browsex_viewer = 'open'
-'''
-
-[[plugins]]
-repo = 'tpope/vim-rhubarb'
-
-[[plugins]]
-repo = 'junegunn/fzf'
+# [[plugins]]
+# repo = 'tpope/vim-fugitive'
+# hook_add = '''
+# let g:netrw_browsex_viewer = 'open'
+# '''
+# 
+# [[plugins]]
+# repo = 'tpope/vim-rhubarb'
+# 
+# # [[plugins]]
+# # repo = 'junegunn/fzf'
+# 
+# [[plugins]]
+# repo = 'tyru/eskk.vim'
+# hook_add = '''
+# let g:eskk#server = {
+# \   'host': 'localhost',
+# \   'port': 1178,
+# \}
+# '''
