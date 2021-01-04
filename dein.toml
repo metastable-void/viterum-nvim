@@ -1,17 +1,33 @@
 [[plugins]]                                    
 repo = 'Shougo/dein.vim'                                          
-
 # ------------------------------------                                    
 # colorscheme lucius setting                                    
 # ------------------------------------
 [[plugins]]
-repo = 'jonathanfilip/vim-lucius'                                    
-hook_add = '''                                              
-    colorscheme lucius                                      
-    set background=light
-    let s:high_contrast=1
-    syntax enable
+repo = 'jonathanfilip/vim-lucius'
+hook_add = '''  
+set background=light
+let s:high_contrast=1
 '''
+
+# [[plugins]]
+# repo = 'tssm/fairyfloss.vim'
+# hook_add = '''
+#     colorscheme fairyfloss
+# '''
+
+# [[plugins]]
+# repo = 'joshdick/onedark.vim'
+# hook_add = '''
+# if (has("autocmd") && !has("gui_running"))
+#   augroup colorset
+#     autocmd!
+#     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+#     autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+#   augroup END
+# endif
+# colorscheme onedark
+# '''
 
 [[plugins]]
 repo = 'sheerun/vim-polyglot'
@@ -52,6 +68,7 @@ repo = 'kassio/neoterm'
 hook_add = '''
 nnoremap @p :T python %:t<CR>
 nnoremap @h :T stack runghc %:t<CR>
+nnoremap @c :T cargo run<CR>
 nnoremap @l :T ptex2pdf -l -ot -kanji=utf8 %:t<CR> 
 '''
 
@@ -83,13 +100,10 @@ repo = 'tpope/vim-rhubarb'
 # repo = 'junegunn/fzf'
 
 [[plugins]]
-repo = 'tyru/eskk.vim'
+repo = 'rust-lang/rust.vim'
+
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
 hook_add = '''
-let g:eskk#server = {
-\   'host': 'localhost',
-\   'port': 1178,
-\}
-let g:eskk#directory = "~/.eskk"
-let g:eskk#dictionary = { 'path': "~/.skk-jisyo", 'sorted': 0, 'encoding': 'utf-8', }
-let g:eskk#large_dictionary = { 'path': "~/.eskk/SKK-JISYO.L", 'sorted': 1, 'encoding': 'euc-jp', }
+let g:seiya_auto_enable=1
 '''

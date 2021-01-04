@@ -74,3 +74,11 @@ endif
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 set clipboard+=unnamedplus
+syntax enable
+
+colorscheme lucius
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NonText ctermbg=NONE guibg=NONE
+highlight LineNr ctermbg=NONE guibg=NONE
+highlight Folded ctermbg=NONE guibg=NONE
+highlight EndOfBuffer ctermbg=NONE guibg=NONE
