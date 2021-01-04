@@ -54,14 +54,6 @@ hook_add = '''
 [[plugins]]
 repo = 'kana/vim-fakeclip.git'
 
-[[plugins]]
-repo = 'neoclide/coc.nvim'
-if = '''executable('node') && executable('yarn')'''
-build = 'yarn install --frozen-lockfile'
-merged = '0'
-hook_add = '''
-source ~/.config/nvim/coc-conf.vim
-'''
 
 [[plugins]]
 repo = 'kassio/neoterm'
@@ -71,10 +63,6 @@ nnoremap @h :T stack runghc %:t<CR>
 nnoremap @c :T cargo run<CR>
 nnoremap @l :T ptex2pdf -l -ot -kanji=utf8 %:t<CR> 
 '''
-
-[[plugin]]
-repo = 'neoclide/coc-jedi'
-build = 'yarn install'
 
 # [[plugins]]
 # repo = 'SirVer/ultisnips'
